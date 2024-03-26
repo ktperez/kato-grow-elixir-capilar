@@ -1,0 +1,190 @@
+/* Estilo para el botón de enviar */
+.custom-send-btn {
+    background-color: #9B7D3A;  /* Color de fondo similar al de la bola emergente */
+    border-color: #9B7D3A;  /* Color del borde similar al de la bola emergente */
+    color: white;  /* Color del texto */
+    width: 45%;  /* Ancho del botón */
+    border-radius: 10px;  /* Borde redondeado */
+    margin-right: 5px;  /* Margen derecho */
+}
+
+/* Estilo para el botón de enviar al pasar el cursor */
+.custom-send-btn:hover {
+    background-color: #7f6525;  /* Nuevo color al pasar el cursor */
+    border-color: #7f6525;  /* Nuevo color borde al pasar el cursor */
+}
+
+/* Clase para el botón de subir imagen */
+.custom-image-btn {
+    background-color: #9B7D3A;  /* Color de fondo similar al de la bola emergente */
+    border-color: #9B7D3A;  /* Color del borde similar al de la bola emergente */
+    color: white;  /* Color del texto */
+    width: 45%;  /* Ancho del botón */
+    border-radius: 10px;  /* Borde redondeado */
+    margin-left: 5px;  /* Margen izquierdo */
+}
+
+/* Estilo para el botón de subir imagen al pasar el cursor */
+.custom-image-btn:hover {
+    background-color: #7f6525;  /* Nuevo color al pasar el cursor */
+    border-color: #7f6525;  /* Nuevo color borde al pasar el cursor */
+}
+
+/* Ajuste del tamaño del campo de entrada de archivo */
+#image-input {
+    width: auto;  /* Ajusta el ancho automáticamente */
+}
+
+/* Estilo para la bola emergente del chat */
+.chat-ball {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #f4f8fc;
+    color: white;
+    width: 80px;
+    height: 80px;
+    border-radius: 60%;
+    text-align: center;
+    line-height: 70px;
+    cursor: pointer;
+    z-index: 9999;
+}
+
+/* Estilo para el icono del chat */
+.chat-icon img {
+    width: 100%; /* Ajusta el tamaño del logo al 100% del contenedor */
+    height: 100%; /* Ajusta el tamaño del logo al 100% del contenedor */
+    border-radius: 60%; /* Para que sea un círculo */
+    background-color: #fff; /* Color de fondo si el logo tiene espacios en blanco alrededor */
+    padding: 10px; /* Espaciado interno del logo */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2); /* Sombra del logo */
+}
+
+/* Estilos para la bola emergente completa */
+.chat-popup {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 300px;
+    background-color: white;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    display: none;
+    z-index: 9998;
+}
+
+.chat-popup .container {
+    padding: 20px;
+}
+
+.chat-popup .close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+}
+
+.chat-popup h1 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.chat-popup #chat-container {
+    max-height: 300px;
+    overflow-y: auto;
+}
+
+.chat-popup #chat-box {
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    margin-bottom: 10px;
+}
+
+.chat-popup #user-input {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.chat-popup .btn {
+    width: 100%;
+}
+
+.chat-popup .uploaded-image {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+/* Estilos para los mensajes del usuario */
+.message.user-message {
+    background-color: #9B7D3A;
+    color: white;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 10px;
+    align-self: flex-start; /* Alinear a la izquierda */
+    max-width: 80%; /* Ancho máximo para evitar que los mensajes sean demasiado anchos */
+}
+
+/* Estilos para las respuestas del chatbot */
+.message.kato-message {
+    background-color: #f9f9f9;
+    color: #333;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 10px;
+    align-self: flex-end; /* Alinear a la derecha */
+    max-width: 80%; /* Ancho máximo para evitar que los mensajes sean demasiado anchos */
+}
+/* Clase para el botón de enviar */
+.custom-send-btn {
+    background-color: #9B7D3A;  /* Color de fondo similar al proporcionado */
+    border-color: #9B7D3A;  /* Color del borde similar al proporcionado */
+    color: white;  /* Color del texto */
+    width: 25%;  /* Ancho del botón */
+    margin-right: 2%;  /* Margen entre los botones */
+    border-radius: 10px;  /* Borde redondeado */
+}
+
+/* Estilo para el botón de enviar al pasar el cursor */
+.custom-send-btn:hover {
+    background-color: #7f6525;  /* Nuevo color al pasar el cursor */
+    border-color: #cd793094;  /* Nuevo color borde al pasar el cursor */
+}
+
+/* Clase para el botón de subir imagen */
+.custom-image-btn {
+    background-color: #9B7D3A;  /* Color de fondo similar al proporcionado */
+    border-color: #9B7D3A;  /* Color del borde similar al proporcionado */
+    color: white;  /* Color del texto */
+    width: 25%;  /* Ancho del botón */
+    margin-left: 2%;  /* Margen entre los botones */
+    border-radius: 10px;  /* Borde redondeado */
+}
+
+/* Estilo para el botón de subir imagen al pasar el cursor */
+.custom-image-btn:hover {
+    background-color: #7f6525;  /* Nuevo color al pasar el cursor */
+    border-color: #7f6525;  /* Nuevo color borde al pasar el cursor */
+}
+
+/* Ajuste del tamaño del campo de entrada de archivo */
+#image-input {
+    width: auto;  /* Ajusta el ancho automáticamente */
+}
+
+/* Agrega la animación de vibración */
+@keyframes vibrate {
+    0% { transform: translateX(0); }
+    20% { transform: translateX(5px); }
+    40% { transform: translateX(-5px); }
+    60% { transform: translateX(3px); }
+    80% { transform: translateX(-3px); }
+    100% { transform: translateX(0); }
+}
+
+.chat-popup.vibrate {
+    animation: vibrate 0.3s linear infinite;  /* Aplica la animación de vibración */
+}
