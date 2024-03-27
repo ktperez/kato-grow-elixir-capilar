@@ -1,0 +1,31 @@
+name: Despliegue en Heroku
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout del código
+        uses: actions/checkout@v2
+
+      - name: Configurar Heroku CLI
+        uses: actions/setup-python@v2
+        with:
+          version: '3.x'
+
+      - name: Instalar dependencias
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+
+      - name: Iniciar sesión en Heroku
+        run: heroku login -i
+
+      - name: Desplegar en Heroku
+        run: git push heroku main:main
+        env:
+          HEROKU_API_KEY: ${{ secrets.HEROKU_API_KEY }}
