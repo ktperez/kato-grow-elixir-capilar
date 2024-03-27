@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat con Kato</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/chat.css') }}">
+</head>
+<body>
+    <!-- Chat Ball -->
+    <div class="chat-ball" id="chat-ball">
+        <div class="chat-icon">
+            <img src="static/img/chat-icon.png" alt="Chat Icon">
+        </div>
+    </div>
+    <!-- Chat Popup -->
+    <div class="chat-popup" id="myForm">
+        <div class="container">
+            <button type="button" class="close" id="close-btn">&times;</button>
+            <h1 class="mt-5">Chat con Kato</h1>
+            <div class="chat-container mt-4" id="chat-container">
+                <div class="chat-box" id="chat-box">
+                    <!-- Chat messages will appear here -->
+                </div>
+            </div>
+            <input type="text" class="form-control" id="user-input" placeholder="Escribe tu mensaje...">
+            <div class="row mt-3">
+                <div class="col">
+                    <button class="btn btn-primary custom-send-btn" id="send-btn">Enviar</button>
+                </div>
+                <div class="col">
+                    <label for="image-input" class="btn btn-primary custom-image-btn">Subir Imagen</label>
+                    <input type="file" id="image-input" class="mt-3" style="display: none;">
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="{{ url_for('static', filename='js/chat.js') }}"></script>
+
+    <!-- Script adicional para mostrar la ventana emergente -->
+    <script>
+        function showPrediction(prediction) {
+            alert('Su tipo de cabello es: ' + prediction);
+        }
+    </script>
+</body>
+</html>
